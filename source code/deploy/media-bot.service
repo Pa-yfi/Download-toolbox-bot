@@ -1,0 +1,15 @@
+[Unit]
+Description=Telegram media downloader bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+WorkingDirectory=/opt/media-bot
+ExecStart=/opt/media-bot/venv/bin/python runner.py
+Restart=always
+RestartSec=5
+# systemd respects clean exits (e.g. invalid token) and won't loop on them
+RestartPreventExitStatus=0
+
+[Install]
+WantedBy=multi-user.target

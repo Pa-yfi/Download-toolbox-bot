@@ -1,0 +1,6 @@
+aiogram>=3.13
+python-dotenv>=1.0
+yt-dlp>=2025.1.15
+instaloader>=4.13
+spotdl>=4.2.10
+imageio-ffmpeg>=0.5

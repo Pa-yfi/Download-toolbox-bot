@@ -1,0 +1,5 @@
+.env
+venv/
+downloads/
+botdata.json
+__pycache__/
